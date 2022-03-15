@@ -1,0 +1,114 @@
+{
+  "name": "invoice-dashboard",
+  "version": "0.1.0",
+  "license": "MIT",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.13",
+    "@types/react": "^17.0.20",
+    "@types/react-dom": "^17.0.9",
+    "date-fns": "^2.28.0",
+    "generate-unique-id": "^2.0.1",
+    "react": "^17.0.2",
+    "react-calendar": "^3.6.0",
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^7.25.0",
+    "react-router-dom": "6",
+    "react-scripts": "5.0.0",
+    "typescript": "^4.4.2",
+    "use-local-storage": "^2.2.6",
+    "web-vitals": "^2.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "prepare": "husky install",
+    "lint": "tsc --noEmit && eslint src",
+    "prettier:fix": "prettier --write",
+    "prettier:check": "prettier --check"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "standard",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:jest/recommended",
+      "plugin:prettier/recommended",
+      "plugin:import/recommended",
+      "plugin:import/typescript"
+    ],
+    "plugins": [
+      "@typescript-eslint",
+      "prettier"
+    ],
+    "env": {
+      "browser": true,
+      "es6": true,
+      "jest": true
+    },
+    "globals": {
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 2018,
+      "sourceType": "module",
+      "project": "./tsconfig.json"
+    },
+    "rules": {
+      "linebreak-style": "off",
+      "no-console": "warn",
+      "prettier/prettier": [
+        "error",
+        {
+          "endOfLine": "auto"
+        }
+      ]
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react-calendar": "^3.4.5",
+    "@typescript-eslint/eslint-plugin": "^5.9.1",
+    "@typescript-eslint/parser": "^5.9.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": ">=10",
+    "prettier": "^2.5.1"
+  },
+  "lint-staged": {
+    "src/*.{ts,tsx}": [
+      "yarn prettier:fix",
+      "yarn lint"
+    ],
+    "src/*.{css,md}": [
+      "yarn prettier:fix"
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 6.4rem;
+  border-radius: 3.2rem;
+  border: none;
+  box-shadow: 0 3px 14px -14px var(--basic-2);
+  font-size: var(--font-size-5);
+  font-weight: var(--font-weight-bold);
+  line-height: 16px;
+  letter-spacing: -0.23px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: unset;
+}
+
+/* Statuses */
+.primary {
+  background-color: var(--button-background-1);
+  color: var(--button-text-1);
+}
+
+.primary:hover {
+  background-color: var(--button-background-hover-1);
+}
+
+.secondary {
+  background-color: var(--button-background-2);
+  color: var(--button-text-1);
+}
+
+.secondary:hover {
+  background-color: var(--button-background-hover-2);
+}
+
+.tertiary {
+  background-color: var(--button-background-3);
+  color: var(--button-text-2);
+}
+
+.tertiary:hover {
+  background-color: var(--button-background-hover-3);
+  color: var(--button-text-hover-3);
+}
+
+.tertiary-alternative {
+  background-color: var(--button-background-hover-3);
+  color: var(--button-text-hover-3);
+}
+
+.tertiary-alternative:hover {
+  background-color: var(--button-background-3);
+  color: var(--button-text-2);
+}
+
+.danger {
+  background-color: var(--danger-1);
+  color: var(--basic-1);
+}
+
+.danger:hover {
+  background-color: var(--danger-2);
+}
+
+/* Sizes */
+.small {
+  padding: 1.2rem 1.4rem;
+  font-size: var(--font-size-6);
+}
+
+.medium {
+  padding: 0.6rem 1.6rem;
+}
+
+.large {
+  padding: 1.2rem 2.2rem;
+}
+
+/* Left Accessory */
+.leftAccessoryContainer {
+  padding: 0.8rem 1.8rem 0.8rem 0.8rem;
+}
+
+.leftAccessory {
+  margin-right: calc(var(--gutter) * 3);
+  display: flex;
+}
+
+/* Full width */
+.fullWidth {
+  width: 100%;
+}
+
+.fullWidth .leftAccessory {
+  margin-right: calc(var(--gutter) * 1.5);
+}

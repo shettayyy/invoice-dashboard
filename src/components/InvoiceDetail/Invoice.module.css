@@ -1,0 +1,97 @@
+.emptyContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.layoutColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.invoiceDetailContainer {
+  padding: calc(var(--gutter) * 12) calc(var(--gutter) * 10);
+  margin-top: calc(var(--gutter) * 6);
+  background-color: var(--background-2);
+  width: 100%;
+}
+
+.invoiceHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.invoiceTitleContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectName {
+  margin-top: calc(var(--gutter) * 3);
+}
+
+.invoiceSubheader {
+  display: flex;
+  padding-top: calc(var(--gutter) * 6);
+}
+
+.invoiceSubheader > section:first-of-type {
+  flex-grow: 0.3;
+}
+
+.invoiceSubheader > section:nth-child(2) {
+  flex-grow: 0.4;
+}
+
+.subHeaderTitle {
+  margin-bottom: calc(var(--gutter) * 2);
+}
+
+.dateContainer {
+  justify-content: space-between;
+}
+
+.clientName {
+  margin-bottom: calc(var(--gutter) * 2);
+}
+
+.clientAddress > span {
+  margin-top: calc(var(--gutter));
+}
+
+.invoiceBody {
+  background-color: var(--background-3);
+  border-radius: 8px;
+  margin-top: calc(var(--gutter) * 12);
+}
+
+.itemContainer {
+  padding: 3.6rem;
+}
+
+.itemRow {
+  display: flex;
+  margin-top: calc(var(--gutter) * 6);
+}
+
+.itemRow:first-of-type {
+  margin-top: 0;
+}
+
+.itemCol {
+  width: calc(100% / 4);
+}
+
+.itemCol:first-of-type {
+  width: 50%;
+}
+
+.totalContainer {
+  padding: 3.2rem;
+  background-color: var(--basic-2);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  justify-content: space-between;
+  display: flex;
+}

@@ -1,0 +1,11 @@
+.container {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  margin-top: calc(var(--gutter) * 15);
+  margin-bottom: calc(var(--gutter) * 7);
+}

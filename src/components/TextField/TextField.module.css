@@ -1,0 +1,65 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  display: block;
+  margin-bottom: calc(var(--gutter) * 2);
+}
+
+.label-primary {
+  color: var(--textfield-label-1);
+}
+
+.inputContainer {
+  position: relative;
+}
+
+.inputContainer input {
+  margin-bottom: calc(var(--gutter));
+}
+
+.textfield {
+  padding: 1.4rem;
+  border-radius: 4px;
+  width: 100%;
+  font-size: var(--font-size-5);
+  font-weight: var(--font-weight-bold);
+  line-height: 15px;
+  letter-spacing: -0.25px;
+}
+
+.rightAccessoryInput {
+  padding-right: 3.2rem;
+}
+
+.rightAccessory {
+  position: absolute;
+  right: 1.6rem;
+  top: 15px;
+}
+
+.primary {
+  border: 1px solid var(--textfield-border-1);
+  background-color: var(--textfield-background-1);
+  color: var(--textfield-text-1);
+  caret-color: var(--textfield-caret-1);
+}
+
+.primary:focus,
+.primary:focus-visible {
+  outline: 1px solid var(--textfield-focus-1);
+}
+
+.danger {
+  border: 1px solid var(--danger-1);
+  background-color: var(--textfield-background-1);
+  color: var(--textfield-text-1);
+  caret-color: var(--danger-1);
+}
+
+.danger:focus,
+.danger:focus-visible {
+  outline: 1px solid var(--danger-1);
+}

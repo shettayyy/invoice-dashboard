@@ -1,0 +1,106 @@
+.container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.formTitle {
+  padding: calc(var(--gutter) * 10) 0;
+  display: block;
+}
+
+.formFields {
+  height: 80%;
+  overflow: hidden;
+}
+
+.formFieldsWrapper {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.fieldset {
+  margin-top: calc(var(--gutter) * 6);
+}
+
+.fieldSeparator {
+  display: block;
+  margin-bottom: calc(var(--gutter) * 4);
+}
+
+.fieldSetTitle {
+  color: var(--primary-shade-1);
+  margin-bottom: calc(var(--gutter) * 4);
+  display: block;
+}
+
+.addressSet {
+  display: flex;
+}
+
+.postcode {
+  margin: 0 calc(var(--gutter) * 2);
+}
+
+.dateContainer {
+  display: flex;
+}
+
+.paymentTerms {
+  margin-left: calc(var(--gutter) * 4);
+}
+
+.items {
+  margin: calc(var(--gutter) * 6) 0;
+}
+
+.itemsTitle {
+  display: block;
+  margin-bottom: calc(var(--gutter) * 4);
+}
+
+.itemRow {
+  display: flex;
+}
+
+.itemRow:first-of-type {
+  margin-bottom: calc(var(--gutter) * 2);
+}
+
+.itemCol {
+  width: calc(100% / 5);
+  margin-left: calc(var(--gutter) * 4);
+  display: flex;
+  align-items: center;
+}
+
+.itemCol:first-of-type {
+  width: 50%;
+  margin-left: 0;
+}
+
+.itemCol:last-of-type {
+  width: 5%;
+}
+
+.total {
+  overflow: auto;
+}
+
+.actionBtns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.mainBtns {
+  display: flex;
+}
+
+.mainBtns > button:first-of-type {
+  margin-right: calc(var(--gutter) * 2);
+}

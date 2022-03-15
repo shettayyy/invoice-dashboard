@@ -1,0 +1,28 @@
+.formContainer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.2s;
+}
+
+.showOverlay {
+  background-color: var(--shadow-1-50);
+  transition: background-color 0.2s;
+}
+
+.formWrap {
+  max-width: 50rem;
+  width: 50%;
+  height: 100%;
+  min-width: 32rem;
+  background-color: var(--background-1);
+  transform: translateX(-100%);
+  transition: transform 0.2s;
+}
+
+.showForm {
+  transform: translateX(0);
+  transition: transform 0.2s;
+}

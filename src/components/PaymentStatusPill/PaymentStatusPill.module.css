@@ -1,0 +1,48 @@
+.container {
+  border-radius: 8px;
+}
+
+.notification {
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: calc(var(--gutter) * 2);
+}
+
+/* Status */
+.paid {
+  background-color: var(--success-1-10);
+}
+
+.paid .notification {
+  background-color: var(--success-1);
+}
+
+.paid-label {
+  color: var(--success-1);
+}
+
+.pending {
+  background-color: var(--warning-1-10);
+}
+
+.pending .notification {
+  background-color: var(--warning-1);
+}
+
+.pending-label {
+  color: var(--warning-1);
+}
+
+.draft {
+  background-color: var(--tertiary-shade-3);
+}
+
+.draft .notification {
+  background-color: var(--accent-3);
+}
+
+.draft-label {
+  color: var(--accent-3);
+}

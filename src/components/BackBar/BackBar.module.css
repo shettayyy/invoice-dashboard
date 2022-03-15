@@ -1,0 +1,12 @@
+.navigation {
+  width: 100%;
+}
+
+.link {
+  padding: 1.6rem 1.6rem 1.6rem 0;
+  display: inline-block;
+}
+
+.icon {
+  margin-right: calc(var(--gutter) * 4);
+}

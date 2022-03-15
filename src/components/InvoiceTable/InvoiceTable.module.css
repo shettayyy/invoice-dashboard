@@ -1,0 +1,38 @@
+.id > span {
+  width: 100%;
+}
+
+.idHash {
+  color: var(--accent-2);
+}
+
+.paymentDue {
+  width: 18%;
+}
+
+.clientName {
+  width: 23%;
+}
+
+.total > span {
+  width: 100%;
+}
+
+.status {
+  width: 19%;
+}
+
+.status > span {
+  width: 100%;
+}
+
+.iconCell {
+  width: 5rem;
+  min-width: unset;
+  padding: 0 1rem;
+}
+
+.arrowRight {
+  transform: scale(1.2);
+  margin-right: 1.2rem;
+}

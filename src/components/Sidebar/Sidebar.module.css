@@ -1,0 +1,59 @@
+.container {
+  height: 100%;
+  min-width: 10rem;
+  background-color: var(--accent-4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.logoContainer {
+  height: 114px;
+  display: flex;
+  align-items: flex-end;
+  background-color: var(--primary-shade-1);
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+  position: relative;
+}
+
+.logoShade {
+  height: 50%;
+  width: 100%;
+  background-color: var(--primary-shade-2);
+  border-top-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+.logo {
+  transform: scale(1.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: auto;
+  bottom: 0;
+  right: 0;
+}
+
+.menu span {
+  width: 100%;
+  display: flex;
+  padding: 3.2rem 0;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.avatar {
+  border-top: 0.5px solid var(--accent-2);
+}
+
+.avatar img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}

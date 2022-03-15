@@ -1,0 +1,26 @@
+.actionBar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.6rem 3.2rem;
+  background-color: var(--background-2);
+  border-radius: 8px;
+}
+
+.statusContainer,
+.actionBtns {
+  display: flex;
+  align-items: center;
+}
+
+.status {
+  margin-right: calc(var(--gutter) * 4);
+}
+
+.actionBtns > button {
+  margin-left: calc(var(--gutter) * 2);
+}
+
+.actionBtns > button:first-of-type {
+  margin-left: 0;
+}

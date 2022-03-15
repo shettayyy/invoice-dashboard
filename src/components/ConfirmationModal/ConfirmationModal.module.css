@@ -1,0 +1,33 @@
+.modalOverlay {
+  position: fixed;
+  background: var(--shadow-1-50);
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-2);
+  padding: calc(var(--gutter) * 12) calc(var(--gutter) * 10);
+  max-width: 45rem;
+}
+
+.message {
+  margin: calc(var(--gutter) * 2) 0 calc(var(--gutter) * 4);
+}
+
+.actionBtns {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.actionBtns button:first-of-type {
+  margin-right: calc(var(--gutter) * 2);
+}

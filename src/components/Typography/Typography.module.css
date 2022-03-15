@@ -1,0 +1,90 @@
+.typography {
+  color: var(--text-1);
+}
+
+/* Categories */
+.h1 {
+  font-size: var(--font-size-1);
+  font-weight: var(--font-weight-bold);
+  line-height: 36px;
+  letter-spacing: -1px;
+}
+
+.h2 {
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-bold);
+  line-height: 22px;
+  letter-spacing: -0.63px;
+}
+
+.h3 {
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-bold);
+  line-height: 24px;
+  letter-spacing: -0.8px;
+}
+
+.h4 {
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-bold);
+  line-height: 16px;
+  letter-spacing: -0.25px;
+}
+
+.body1 {
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-medium);
+  line-height: 16px;
+  letter-spacing: -0.25px;
+}
+
+.body2 {
+  font-size: var(--font-size-5);
+  font-weight: var(--font-weight-medium);
+  line-height: 16px;
+  letter-spacing: -0.25px;
+}
+
+.body3 {
+  font-size: var(--font-size-5);
+  font-weight: var(--font-weight-bold);
+  line-height: 16px;
+  letter-spacing: -0.25px;
+}
+
+.body4 {
+  font-size: var(--font-size-6);
+  font-weight: var(--font-weight-medium);
+  line-height: 18px;
+  letter-spacing: -0.23px;
+}
+
+/* Align */
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+/* Status */
+.text-primary {
+  color: var(--text-1);
+}
+
+.text-secondary {
+  color: var(--text-2);
+}
+
+.text-tertiary {
+  color: var(--text-3);
+}
+
+.text-danger {
+  color: var(--danger-1);
+}

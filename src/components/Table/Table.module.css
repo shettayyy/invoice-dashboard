@@ -1,0 +1,45 @@
+.container {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+}
+
+.row {
+  margin-top: calc(var(--gutter) * 5);
+  display: flex;
+  white-space: nowrap;
+  height: 7.5rem;
+  cursor: pointer;
+}
+
+.row:first-child {
+  margin-top: 0;
+}
+
+.cell {
+  padding: 1.6rem;
+  background-color: var(--accent-4);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  min-width: 12rem;
+  width: calc(100% / 6);
+  white-space: break-spaces;
+}
+
+.cell:first-of-type {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.cell:last-of-type {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}

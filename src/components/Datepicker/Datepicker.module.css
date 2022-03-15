@@ -1,0 +1,94 @@
+.dropdownContainer {
+  position: relative;
+}
+
+/* Dropdown Input */
+.dropdown {
+  cursor: pointer;
+}
+
+.primary .dropdown:focus {
+  outline: 1px solid var(--textfield-border-1);
+}
+
+.primary .dropdown:hover {
+  outline: 1px solid var(--textfield-focus-1);
+}
+
+/* Datepicker */
+.calendar {
+  position: absolute;
+  top: 8rem;
+  width: 100%;
+  padding: 1.6rem;
+  width: 35rem;
+  border-radius: 8px;
+  box-shadow: 0 7px 40px -23px var(--basic-2);
+  z-index: 9999;
+}
+
+.primary .calendarContainer {
+  background-color: var(--datepicker-menu-1);
+}
+
+.primary .calendar {
+  background-color: var(--datepicker-menu-1);
+}
+
+.calendar :global(.react-calendar__month-view__weekdays) {
+  display: none !important;
+}
+
+.calendar :global(.react-calendar__navigation) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1.6rem;
+}
+
+.calendar :global(.react-calendar__navigation__label) {
+  flex-grow: 0.9 !important;
+  cursor: pointer;
+}
+
+.calendar :global(.react-calendar__navigation__label span) {
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.5;
+  letter-spacing: -0.25px;
+}
+
+.calendar :global(.react-calendar__tile) {
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.5;
+  letter-spacing: -0.25px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+
+.calendar :global(.react-calendar__navigation__arrow) {
+  padding: 1rem;
+}
+
+.primary .calendar :global(.react-calendar__navigation__label span) {
+  color: var(--datepicker-text-1);
+}
+
+.primary :global(.react-calendar__tile) {
+  color: var(--datepicker-text-1);
+}
+
+.primary :global(.react-calendar__tile--active) {
+  color: var(--datepicker-active-text-1);
+}
+
+.primary :global(.react-calendar__month-view__days__day--neighboringMonth) {
+  color: var(--datepicker-neighbouring-text-1);
+}
+
+.navigationIcon {
+  transform: scale(1.5);
+  cursor: pointer;
+}
